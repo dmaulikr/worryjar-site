@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>support — the worry jar</title>
+  <meta name="description" content="Support and contact for the worry jar iOS app." />
+  <style>
+    :root {
+      --deep-night: #0a0f29;
+      --midnight:   #141a3d;
+      --dusk:       #292452;
+      --starlight:  #f5f7ff;
+      --starlight-soft: rgba(245, 247, 255, 0.72);
+      --starlight-faint: rgba(245, 247, 255, 0.45);
+      --brass:      #ebc76b;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, var(--deep-night), var(--midnight) 60%, var(--dusk));
+      color: var(--starlight);
+      font-family: ui-serif, Georgia, "Times New Roman", serif;
+      font-size: 17px;
+      line-height: 1.65;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      max-width: 560px;
+      margin: 0 auto;
+      padding: 80px 28px 96px;
+    }
+    h1 {
+      font-weight: 400;
+      font-size: 2rem;
+      letter-spacing: 0.04em;
+      margin: 0 0 8px;
+    }
+    .tagline {
+      font-style: italic;
+      color: var(--starlight-soft);
+      margin: 0 0 48px;
+    }
+    h2 {
+      font-weight: 400;
+      font-size: 1.1rem;
+      margin: 32px 0 10px;
+      color: var(--brass);
+    }
+    p, li { color: var(--starlight-soft); }
+    a { color: var(--brass); text-decoration: none; border-bottom: 1px dashed rgba(235, 199, 107, 0.4); }
+    a:hover { border-bottom-style: solid; }
+    ul { padding-left: 18px; }
+    li { margin-bottom: 6px; }
+    .footer-nav {
+      margin-top: 56px;
+      font-size: 0.95rem;
+      color: var(--starlight-faint);
+    }
+    .footer-nav a { margin-right: 14px; }
+    .quiet {
+      color: var(--starlight-faint);
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>support</h1>
+    <p class="tagline">the worry jar</p>
+
+    <p>Thank you for using the worry jar. If something isn't working as expected, or you have a thought to share, please reach out.</p>
+
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:dmaulikr@gmail.com">dmaulikr@gmail.com</a></p>
+    <p>I read everything. Replies may take a few days.</p>
+
+    <h2>Common questions</h2>
+
+    <h2>My worries didn't sync to a new device</h2>
+    <p>By design — the worry jar never sends anything to the cloud. Each device keeps its own jar. This is the privacy promise.</p>
+
+    <h2>I don't see the widget on my home screen</h2>
+    <p>Long-press an empty area on the home screen → tap the <strong>+</strong> button in the top-left → search "the worry jar" → choose a size → Add Widget. Lock-screen and watch widgets are added the same way from the lock-screen and watch-face customization views.</p>
+
+    <h2>Notifications aren't arriving</h2>
+    <p>Open iOS Settings → Notifications → the worry jar → make sure Allow Notifications is on. Then in the app, Settings → Gentle reminder → enable and pick a time.</p>
+
+    <h2>The ambient sounds are silent</h2>
+    <p>Check that your iPhone's silent switch is off and that the app's volume slider in Settings → Ambient sound isn't at zero. Sounds are designed to mix with anything else playing — they shouldn't pause your music.</p>
+
+    <h2>Privacy</h2>
+    <p>Read the <a href="privacy.html">privacy policy</a>. Short version: nothing leaves your device.</p>
+
+    <p class="quiet">Sleep a little easier tonight.</p>
+
+    <div class="footer-nav">
+      <a href="./">home</a>
+      <a href="privacy.html">privacy</a>
+    </div>
+  </main>
+</body>
+</html>

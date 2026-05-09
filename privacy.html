@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>privacy — the worry jar</title>
+  <meta name="description" content="Privacy policy for the worry jar iOS app. We don't collect any data." />
+  <style>
+    :root {
+      --deep-night: #0a0f29;
+      --midnight:   #141a3d;
+      --dusk:       #292452;
+      --starlight:  #f5f7ff;
+      --starlight-soft: rgba(245, 247, 255, 0.72);
+      --starlight-faint: rgba(245, 247, 255, 0.45);
+      --brass:      #ebc76b;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, var(--deep-night), var(--midnight) 60%, var(--dusk));
+      color: var(--starlight);
+      font-family: ui-serif, Georgia, "Times New Roman", serif;
+      font-size: 17px;
+      line-height: 1.65;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 64px 28px 96px;
+    }
+    h1 {
+      font-weight: 400;
+      font-size: 2rem;
+      letter-spacing: 0.04em;
+      margin: 0 0 8px;
+    }
+    .tagline {
+      font-style: italic;
+      color: var(--starlight-soft);
+      margin: 0 0 48px;
+    }
+    h2 {
+      font-weight: 400;
+      font-size: 1.15rem;
+      margin: 36px 0 12px;
+      color: var(--brass);
+    }
+    p, li { color: var(--starlight-soft); }
+    a { color: var(--brass); text-decoration: none; border-bottom: 1px dashed rgba(235, 199, 107, 0.4); }
+    a:hover { border-bottom-style: solid; }
+    ul { padding-left: 18px; }
+    li { margin-bottom: 6px; }
+    .meta {
+      margin-top: 64px;
+      font-size: 0.9rem;
+      color: var(--starlight-faint);
+      font-style: italic;
+    }
+    .footer-nav {
+      margin-top: 48px;
+      font-size: 0.95rem;
+      color: var(--starlight-faint);
+    }
+    .footer-nav a { margin-right: 14px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>privacy</h1>
+    <p class="tagline">the worry jar</p>
+
+    <p>the worry jar does not collect, store, or transmit any personal data. Everything you put into the jar — every worry, setting, and reminder time — stays on your device. None of it is ever sent to us, to a server, or to any third party.</p>
+
+    <h2>What we don't do</h2>
+    <ul>
+      <li>No accounts. No login.</li>
+      <li>No analytics. No telemetry.</li>
+      <li>No advertising. No tracking.</li>
+      <li>No third-party SDKs of any kind.</li>
+      <li>No cloud storage. No syncing services.</li>
+    </ul>
+
+    <h2>What stays on your device</h2>
+    <ul>
+      <li>Your worries, written or released, are stored locally via Apple's SwiftData. They never leave the device.</li>
+      <li>Your reminder time and other preferences are stored in your device's settings (UserDefaults). Used only by the local notification scheduler.</li>
+      <li>Your wish-star count is shared between the app and its widget through an iOS App Group — entirely on-device.</li>
+    </ul>
+
+    <h2>Notifications</h2>
+    <p>If you choose to enable the daily reminder, the worry jar uses Apple's local notifications to deliver it. Apple handles delivery on your device — no message is sent to a server.</p>
+
+    <h2>Deleting your data</h2>
+    <p>Delete the app from your device. Everything goes with it. There's no remote copy to remove.</p>
+
+    <h2>Children</h2>
+    <p>the worry jar is rated 4+. We don't knowingly collect any personal information from anyone, of any age — we don't collect anything from anyone.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If we ever change how the app handles data, we'll update this page and bump the date below. The current and only commitment is: nothing leaves your device.</p>
+
+    <h2>Contact</h2>
+    <p>Questions? Write to <a href="mailto:dmaulikr@gmail.com">dmaulikr@gmail.com</a>.</p>
+
+    <p class="meta">Last updated 2026-05-09.</p>
+
+    <div class="footer-nav">
+      <a href="./">home</a>
+      <a href="support.html">support</a>
+    </div>
+  </main>
+</body>
+</html>

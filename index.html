@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>the worry jar</title>
+  <meta name="description" content="A small, quiet space to set down what's heavy. Drop a worry into the jar. When you're ready, release it — and watch it become a star in your sky." />
+  <style>
+    :root {
+      --deep-night: #0a0f29;
+      --midnight:   #141a3d;
+      --dusk:       #292452;
+      --starlight:  #f5f7ff;
+      --starlight-soft: rgba(245, 247, 255, 0.72);
+      --starlight-faint: rgba(245, 247, 255, 0.45);
+      --brass:      #ebc76b;
+      --brass-deep: #bd9636;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, var(--deep-night), var(--midnight) 50%, var(--dusk));
+      color: var(--starlight);
+      font-family: ui-serif, Georgia, "Times New Roman", serif;
+      font-size: 17px;
+      line-height: 1.65;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    /* Subtle stars in the background */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        radial-gradient(1px 1px at 12% 18%, rgba(245,247,255,0.85), transparent 60%),
+        radial-gradient(1px 1px at 28% 32%, rgba(245,247,255,0.55), transparent 60%),
+        radial-gradient(1.4px 1.4px at 48% 12%, rgba(245,247,255,0.75), transparent 60%),
+        radial-gradient(1px 1px at 68% 22%, rgba(245,247,255,0.45), transparent 60%),
+        radial-gradient(1.2px 1.2px at 82% 38%, rgba(245,247,255,0.7), transparent 60%),
+        radial-gradient(1px 1px at 8% 62%, rgba(245,247,255,0.55), transparent 60%),
+        radial-gradient(1px 1px at 38% 72%, rgba(245,247,255,0.45), transparent 60%),
+        radial-gradient(1.3px 1.3px at 78% 78%, rgba(245,247,255,0.65), transparent 60%),
+        radial-gradient(1px 1px at 92% 60%, rgba(245,247,255,0.5), transparent 60%);
+    }
+    main {
+      position: relative;
+      max-width: 560px;
+      margin: 0 auto;
+      padding: 120px 28px 96px;
+      text-align: center;
+    }
+    h1 {
+      font-weight: 400;
+      font-size: 2.4rem;
+      letter-spacing: 0.05em;
+      margin: 0 0 14px;
+    }
+    .tagline {
+      font-style: italic;
+      color: var(--starlight-soft);
+      font-size: 1.05rem;
+      margin: 0 0 64px;
+    }
+    .pitch {
+      color: var(--starlight-soft);
+      font-style: italic;
+      max-width: 460px;
+      margin: 0 auto 48px;
+      line-height: 1.75;
+    }
+    .pitch p { margin: 0 0 18px; }
+    .links {
+      margin-top: 72px;
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      font-size: 0.95rem;
+      color: var(--starlight-faint);
+    }
+    .links a {
+      color: var(--brass);
+      text-decoration: none;
+      border-bottom: 1px dashed rgba(235, 199, 107, 0.4);
+      padding-bottom: 1px;
+    }
+    .links a:hover { border-bottom-style: solid; }
+    .meta {
+      margin-top: 96px;
+      font-size: 0.85rem;
+      color: var(--starlight-faint);
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>the worry jar</h1>
+    <p class="tagline">let your worries become stars</p>
+
+    <div class="pitch">
+      <p>A small, quiet space for the things weighing on you.</p>
+      <p>When something is on your mind, tap the jar and let it out. Your worry settles inside as a soft, glowing firefly — wandering gently, waiting.</p>
+      <p>When you're ready, release one. It floats up and out of the jar, transforming into a star in your night sky.</p>
+      <p>Some things belong to the sky now.</p>
+    </div>
+
+    <div class="links">
+      <a href="privacy.html">privacy</a>
+      <a href="support.html">support</a>
+      <a href="mailto:dmaulikr@gmail.com">contact</a>
+    </div>
+
+    <p class="meta">an iOS app · sleep a little easier tonight</p>
+  </main>
+</body>
+</html>
